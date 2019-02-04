@@ -1,0 +1,75 @@
+@import 'bulma';
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+$mainColor: #321E46;
+body {
+    main {
+        color: $mainColor;
+        min-height: calc(100vh - 102px);
+    }
+    footer {
+        background: $mainColor;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+    }
+    background-color: #fefefe;
+    .navbar {
+        background: $mainColor;
+        color: #E7DACB;
+        height: 50px;
+        min-height: 3.25rem;
+        position: relative;
+        z-index: 30;
+        .navbar-brand {
+            align-items: stretch;
+            display: flex;
+            flex-shrink: 0;
+            min-height: 3.25rem;
+            .navbar-item {
+                align-items: center;
+                display: flex;
+            }
+        }
+    }
+    h1 {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .logo {
+        color: white;
+    }
+    .profile {
+        align-items: center;
+        display: flex;
+        color: white;
+        float: right;
+        right: 0;
+        position: absolute;
+        padding: 0.5rem 0.75rem;
+        height: 50px;
+        p {
+            padding-left: 8px;
+        }
+    }
+}
+
+.services {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: stretch;
+    li {
+        width: calc(100%/4);
+        padding-bottom: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center;
+    }
+    .service {
+        background: $mainColor;
+        padding: 15px 15px;
+        color: white;
+        a {
+            color: white;
+        }
+    }
+}
