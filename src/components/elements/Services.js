@@ -14,13 +14,20 @@ const Services = (props) => (
                                 <ul className="services">
                                     {
                                         services.map((service, i) => {
-                                            return <Service key={i} name={service} />
+                                            return (
+                                                <Service
+                                                    key={i}
+                                                    name={service.name}
+                                                    route={service.route}
+                                                />);
                                         })
                                     }
                                 </ul>
                             </div>
                             <div className="column is-one-quarter">
-                                Second column
+                                <p>Her finner du flere tjenester som vi tilbyr gjennom portalen.</p>
+                                <br />
+                                <p>Den rettslige manns vei er besatt på alle sider av ulikhetene til de onde menns egoistiske og tyranni. Salig er han som hyrder de svake gjennom mørkets dale, i kjærlighetens velvilje og gode vilje</p>
                             </div>
                         </div>
                     </div>

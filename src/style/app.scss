@@ -1,6 +1,10 @@
 @import 'bulma';
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 $mainColor: #321E46;
+header {
+    background: $mainColor;
+}
+
 body {
     main {
         color: $mainColor;
@@ -68,8 +72,12 @@ body {
         background: $mainColor;
         padding: 15px 15px;
         color: white;
+        transition: 0.3s;
         a {
             color: white;
+        }
+        &:hover {
+            background: #A764E9;
         }
     }
 }

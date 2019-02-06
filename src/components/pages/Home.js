@@ -5,7 +5,7 @@ import Services from '../elements/Services';
 
 const Home = () => (
     <div>
-        <Hero title="Tjenester" subtitle="Du kan finne tjenester"></Hero>
+        <Hero title="Edit programmet" subtitle="Programmet tilbyr en rekke APIer, tjenester og brukegrensesnitt for helseaktører. Vi forvalter helselover og er faglig rådgiver innen helse."></Hero>
         <Services />
     </div>
 )

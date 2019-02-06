@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 const Hero = (props) => (
     <section className="section is-fullwidth">
@@ -18,5 +19,10 @@ const Hero = (props) => (
         </div>
     </section>
 )
+
+Hero.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string
+  };
 
 export default Hero
