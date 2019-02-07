@@ -14,16 +14,21 @@ class ProfileStatus extends React.Component {
         this.props.dispatch(signOut())
     }
 
+    // todo: husk config
+    createLink(){
+        return 'http://localhost:5000/api/login'
+    }
+
     handleBtn() {
-        if (this.props.user.authenticated) {
-            return (< button className="profile btn-nostyle" onClick={e => this.handleSignout(e)} >
-                <i className="fas fa-user-circle fa-2x"></i> <p>Logg ut</p>
-            </button >);
+        if (!this.props.user.authenticated) {
+            return (< a className="profile btn-nostyle" href={this.createLink()} >
+                <i className="fas fa-user-circle fa-2x"></i> <p>Logg inn</p>
+            </a >);
         }
 
-        return (< button className="profile btn-nostyle" onClick={e => this.handleLogin(e)} >
-            <i className="fas fa-user-circle fa-2x"></i> <p>Logg inn</p>
-        </button >)
+        return (< button className="profile btn-nostyle" onClick={e => this.handleSignout(e)} >
+            <i className="fas fa-user-circle fa-2x"></i> <p>Logg ut</p>
+        </button >);
     }
 
     render() {
