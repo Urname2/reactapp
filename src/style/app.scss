@@ -1,26 +1,32 @@
 @import 'bulma';
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../node_modules/roboto-fontface/css/roboto/roboto-fontface.css";
 $mainColor: #321E46;
 header {
-    background: $mainColor;
+    background: white;
+}
+
+.center-stuff {
+    padding: 50px 0
 }
 
 body {
+    font-family: Roboto-Light;
     main {
         color: $mainColor;
         min-height: calc(100vh - 102px);
     }
     footer {
-        background: $mainColor;
+        background: #D9DADB;
         height: 50px;
         line-height: 50px;
         text-align: center;
-        color: white;
+        color: black;
     }
     background-color: #fefefe;
     .navbar {
-        background: $mainColor;
-        color: #E7DACB;
+        background: white;
+        color: black;
         height: 50px;
         min-height: 3.25rem;
         position: relative;
@@ -41,12 +47,12 @@ body {
         margin-top: 30px;
     }
     .logo {
-        color: white;
+        color: black;
     }
     .profile {
         align-items: center;
         display: flex;
-        color: white;
+        color: black;
         float: right;
         right: 0;
         position: absolute;
@@ -59,25 +65,53 @@ body {
 }
 
 .services {
-    flex-wrap: wrap;
-    display: flex;
-    align-items: stretch;
     li {
-        width: calc(100%/4);
-        padding-bottom: 1.5rem;
-        padding-right: 1.5rem;
         text-align: center;
     }
     .service {
-        background: $mainColor;
+        background: white;
         padding: 15px 15px;
-        color: white;
-        transition: 0.3s;
+        color: #58585a;
+        transition: 0.2s;
+        min-height: 210px;
         a {
+            color: #58585a;
+        }
+        .service-name {
+            font-size: 1.875rem
+        }
+        .service-icon i {
             color: white;
+            font-size: 2.5em
+        }
+        .service-icon-background {
+            background: #EA5D23;
+            height: 80px;
+            width: 80px;
+            border-radius: 150px;
+            display: inline-block;
+            text-align: center;
+            line-height: 98px;
         }
         &:hover {
-            background: #A764E9;
+            background: #BADDE9;
+            a {
+                color: black!important;
+            }
         }
     }
+}
+
+.btn-nostyle {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.transition {
+    transition: 0.2s;
 }
