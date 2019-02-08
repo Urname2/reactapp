@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => (
     <footer>
-        <p>En tjeneste levert av Helsedirektoratet</p>
+        <p>En tjeneste levert av Helfo og Helsedirektoratet</p>
     </footer>
 )
 

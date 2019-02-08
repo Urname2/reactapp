@@ -12,13 +12,18 @@ class Services extends React.Component {
 
         if (user.authenticated) {
             return (<div className="column is-one-quarter">
-                <p>Navn: {user.name}</p>
-                <br />
-                <p>Rolle: {user.role}</p>
-                <br />
-                <p>Brukernavn: {user.username}</p>
-                <br />
-                <p>Den rettslige manns vei er besatt på alle sider av ulikhetene til de onde menns egoistiske og tyranni. Salig er han som hyrder de svake gjennom mørkets dale, i kjærlighetens velvilje og gode vilje</p>
+                <div style={{background: 'white', height: '100%', padding : 15}}>
+                    <p><strong>{user.navn}</strong></p>
+                    <br />
+                    <p>{user.rolle} siden {user.rollesiden}</p>
+                    <br />
+                    <p>{user.praksis}</p>
+                    <p>{user.adresse}</p>
+                    <p>{user.postadresse}</p>
+                    <br />
+                    <p>Telefonnummer {user.tlf}</p>
+                    <p>Bankkontonummer {user.konto}</p>
+                </div>
             </div>)
         }
 

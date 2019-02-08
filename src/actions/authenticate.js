@@ -3,7 +3,7 @@ import User from '../store/models/user';
 
 function loggedIn() {
 
-    const user = new User(true, 'pera', 'lege', 'Per Antonsen');
+    const user = new User();
     return {
         type: actions.LOGIN,
         user
@@ -11,13 +11,9 @@ function loggedIn() {
 }
 
 function signOut() {
-    return (dispatch) => {
-        setTimeout(() => {
-            return dispatch({
-                type: actions.SIGNOUT,
-            });
-        }, 500);
-    }
+    return {
+        type: actions.SIGNOUT,
+    };
 }
 
 function login() {
