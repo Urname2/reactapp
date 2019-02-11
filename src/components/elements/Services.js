@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Service from './Service';
-import { services } from '../../actions/services';
+import { services } from '../../actions/services-action';
 
 class Services extends React.Component {
 

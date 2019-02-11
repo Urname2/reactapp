@@ -7,10 +7,16 @@ header {
 }
 
 .center-stuff {
-    padding: 50px 0
+    margin: auto;
+    width: 85%;
+}
+
+.center-text {
+    text-align: center;
 }
 
 body {
+    padding-right: 0!important;
     font-family: Roboto-Light;
     main {
         color: $mainColor;
@@ -67,6 +73,13 @@ body {
 .services {
     li {
         text-align: center;
+        &:last-child {
+            .service {
+                .service-icon-background {
+                    background: #33B1E5;
+                }
+            }
+        }
     }
     .service {
         background: white;
@@ -114,4 +127,15 @@ body {
 
 .transition {
     transition: 0.2s;
+}
+
+form {
+    .form-element {
+        margin: 0px 15px
+    }
+}
+
+.search-result {
+    padding: 40px 0;
+    min-height: 515px;
 }

@@ -2,7 +2,7 @@ import axios from 'axios';
 import actions from './actions';
 import User from '../store/models/user';
 import config from '../config/config';
-import { signOut } from '../actions/authenticate';
+import { signOut } from '../actions/authenticate-action';
 
 function recievedProfile(json) {
     const user = Object.assign(new User(true), json);

@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { login, signOut } from '../../actions/authenticate';
+import { login, signOut } from '../../actions/authenticate-action';
 import config from '../../config/config';
-import { getProfile } from '../../actions/profile';
+import { getProfile } from '../../actions/profile-action';
 
 class ProfileStatus extends React.Component {
 
@@ -37,7 +37,7 @@ class ProfileStatus extends React.Component {
         }
 
         return (< a className="profile btn-nostyle" href={this.createSignOutLink()} >
-            <i className="fas fa-user-circle fa-2x"></i> <p>Logg out</p>
+            <i className="fas fa-user-circle fa-2x"></i> <p>Logg ut</p>
         </a >);
     }
 

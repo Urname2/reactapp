@@ -10,8 +10,8 @@ import es6 from 'es6-promise';
 
 import reducers from './store/reducers';
 import Layout from './components/layout/Layout';
-
 import './style/app.scss'
+
 assign.polyfill();
 es6.polyfill();
 const loggerMiddleware = createLogger()

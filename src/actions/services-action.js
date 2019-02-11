@@ -15,7 +15,7 @@ const services = [
     },
     {
         name: 'Blåresept søknad',
-        description: 'Søk på veiene av en passient',
+        description: 'Søk på vegne av en pasient',
         icon: 'fas fa-user-edit',
         route: routes.reseptsonkad
     },
@@ -26,15 +26,15 @@ const services = [
         route: routes.profile
     },
     {
-        name: 'Frikortspørring',
-        description: 'Sjekk frikortstatus på veiene av en passient',
+        name: 'Mine takster',
+        description: 'Takstveiledning og takstinformasjon',
         icon: 'fas fa-address-card',
         route: routes.profile
     },
     {
-        name: 'Mine takster',
-        description: 'Takstveiledning og takstinformasjon',
-        icon: 'fas fa-wrench',
+        name: 'Regeleditor',
+        description: 'Redigering av regelsett',
+        icon: 'fas fa-wrench blue',
         route: routes.profile
     }
 ];

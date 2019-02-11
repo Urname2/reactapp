@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import HelfoLogo from '../../style/img/logo.svg';
-import { login } from '../../actions/authenticate';
 import ProfileStatus from '../elements/ProfileStatus';
 
 class Header extends React.Component {

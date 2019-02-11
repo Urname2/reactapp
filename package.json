@@ -5,9 +5,12 @@
     "main": "index.js",
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.7.1",
+        "@material-ui/core": "^3.9.2",
+        "@material-ui/icons": "^3.0.2",
         "axios": "^0.18.0",
         "es6-object-assign": "^1.1.0",
         "es6-promise": "^4.2.5",
+        "moment": "^2.24.0",
         "node-sass": "^4.11.0",
         "prop-types": "^15.6.2",
         "react": "^16.7.0",
@@ -22,6 +25,7 @@
         "babel-core": "^6.26.3",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
+        "cssnano": "^4.1.8",
         "redux-logger": "^3.0.6"
     },
     "scripts": {
