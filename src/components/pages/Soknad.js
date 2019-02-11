@@ -4,7 +4,7 @@ import Hero from '../elements/Hero';
 
 const Soknad = () => (
     <div>
-        <Hero title="Blåresept søknad" subtitle=""></Hero>
+        <Hero title="Blåresept søknad" subtitle="Søknad om individuell stønad på blå resept"></Hero>
         <div className="container">
             <form>
                 <input placeholder="fødselsnummer" />
