@@ -4,7 +4,6 @@ import Vedtak from '../store/models/blaaresept-vedtak';
 import config from '../config/config';
 
 function recievedVedtak(json) {
-    console.log('great!', json)
     const vedtak = new Vedtak(json.vedtak, false, true);
     return {
         type: actions.HENTETVEDTAK,
